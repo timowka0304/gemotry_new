@@ -1,9 +1,9 @@
 .PHONY:all clean
 CC=g++
 CFLAGS=-Wall -Werror
-SD=/home/timowka0304/geometry_new/src/
-OD=/home/timowka0304/geometry_new/build/
-EXECUTABLE=/home/timowka0304/geometry_new/bin/geometry.exe
+SD=src/
+OD=build/
+EXECUTABLE=bin/geometry.exe
 all: $(EXECUTABLE)
 	
 $(EXECUTABLE): $(OD)main.o $(OD)perimetr.o $(OD)square.o 
