@@ -1,4 +1,5 @@
 .PHONY:all clean
+VPATH = SRC INCLUD
 CC=g++
 CFLAGS=-Wall -Werror
 SD=~/geometry_new/src/
