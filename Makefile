@@ -1,10 +1,9 @@
 .PHONY:all clean
-VPATH = SRC INCLUD
 CC=g++
 CFLAGS=-Wall -Werror
-SD=~/geometry_new/src/
-OD=~/geometry_new/build/
-EXECUTABLE=~/geometry_new/bin/geometry.exe
+SD=/home/timowka0304/geometry_new/src/
+OD=/home/timowka0304/geometry_new/build/
+EXECUTABLE=/home/timowka0304/geometry_new/bin/geometry.exe
 all: $(EXECUTABLE)
 	
 $(EXECUTABLE): $(OD)main.o $(OD)perimetr.o $(OD)square.o 
