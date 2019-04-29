@@ -18,6 +18,6 @@ int main()
     cin >> a >> b >> c;
     p = PerimetrT(a, b, c);
     s = SquareT(a, b, c);
-    cout << endl << "Perimetr: " << p << "   Square: " << s << endl;
+    cout << endl << "Perimetr: " << p << "   Square: " << s;
     return 0;
 }
