@@ -1,5 +1,4 @@
 #include "foo.h"
-#include <iostream>
 #include <math.h>
 
 float PerimetrC(int r, float PI)
