@@ -19,6 +19,8 @@ int main()
     p = PerimetrC(r, PI);
     s = SquareC(r, PI);
     cout << "Perimetr: " << p << "  Square:  " << s << endl;
+	
+    cout << Cross(x1, y1, r1, x2, y2, r2);
 
     cout << "Enter sides of triangle(a,b,c): ";
     cin >> a >> b >> c;
