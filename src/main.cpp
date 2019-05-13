@@ -1,31 +1,31 @@
 #include "foo.h"
-#include <iostream>
 #include <math.h>
-using namespace std;
+#include <stdio.h>
+#include <stdlib.h>
 const float PI = 3.1415;
 int main()
 {
     int a, b, c, x1, y1, r1, x2, y2, r2;
     float p, s;
 
-    cout << "Enter x, y, radius of 1-st circle: ";
-    cin >> x1 >> y1 >> r1;
-    p = PerimetrC(r, PI);
-    s = SquareC(r, PI);
-    cout << "Perimetr: " << p << "  Square:  " << s << endl;
- 
-    cout << "Enter radius of 2-st circle: ";
-    cin >> x2 >> y2 >> r2;
-    p = PerimetrC(r, PI);
-    s = SquareC(r, PI);
-    cout << "Perimetr: " << p << "  Square:  " << s << endl;
-	
-    cout << Cross(x1, y1, r1, x2, y2, r2);
+    printf("Enter x, y, radius of 1-st circle: ");
+    scanf("%d %d %d", &x1, &y1, &r1);
+    p = PerimetrC(r1, PI);
+    s = SquareC(r1, PI);
+    printf("Perimetr = %f Square = %f\n", p, s);
 
-    cout << "Enter sides of triangle(a,b,c): ";
-    cin >> a >> b >> c;
+    printf("Enter x, y, radius of 2-nd circle: ");
+    scanf("%d %d %d", &x2, &y2, &r2);
+    p = PerimetrC(r2, PI);
+    s = SquareC(r2, PI);
+    printf("Perimetr = %f Square = %f\n", p, s);
+
+    Cross(x1, y1, r1, x2, y2, r2);
+
+    printf("Enter sides of triangle(a,b,c):");
+    scanf("%d %d %d", &a, &b, &c);
     p = PerimetrT(a, b, c);
     s = SquareT(a, b, c);
-    cout << endl << "Perimetr: " << p << "   Square: " << s;
+    printf("Perimetr = %f Square = %f\n", p, s);
     return 0;
 }
