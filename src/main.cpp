@@ -5,11 +5,17 @@ using namespace std;
 const float PI = 3.1415;
 int main()
 {
-    int a, b, c, r;
+    int a, b, c, x1, y1, r1, x2, y2, r2;
     float p, s;
 
-    cout << "Enter radius of circle: ";
-    cin >> r;
+    cout << "Enter x, y, radius of 1-st circle: ";
+    cin >> x1 >> y1 >> r1;
+    p = PerimetrC(r, PI);
+    s = SquareC(r, PI);
+    cout << "Perimetr: " << p << "  Square:  " << s << endl;
+ 
+    cout << "Enter radius of 2-st circle: ";
+    cin >> x2 >> y2 >> r2;
     p = PerimetrC(r, PI);
     s = SquareC(r, PI);
     cout << "Perimetr: " << p << "  Square:  " << s << endl;
