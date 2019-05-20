@@ -3,9 +3,9 @@ language: C
 script:
 - make
 - make test
+- git ls-files src/ | xargs clang-format -i && git diff --exit-code
 - cd bin
 - ./test_geometry
-- git ls-files src/ | xargs clang-format -i && git diff --exit-code
 
 compiler: gcc
 
