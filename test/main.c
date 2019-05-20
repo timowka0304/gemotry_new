@@ -15,7 +15,7 @@ CTEST(perimetr_circle1_t, result_t)
     // When
     const double result = PerimetrC(r, PI);
     // Then
-    const double expected = 18.848999;
+    const double expected = 18.849552;
     ASSERT_DBL_NEAR(expected, result);
 }
 
@@ -27,7 +27,7 @@ CTEST(perimetr_circle2_t, result_t)
     // When
     const double result = PerimetrC(r, PI);
     // Then
-    const double expected = -6.283000;
+    const double expected = -6.283184;
     ASSERT_DBL_NEAR(expected, result);
 }
 
@@ -91,7 +91,7 @@ CTEST(square_circle1_t, result_t)
     // When
     const double result = SquareC(r, PI);
     // Then
-    const double expected = 12.566000;
+    const double expected = 12.566368;
     ASSERT_DBL_NEAR(expected, result);
 }
 
