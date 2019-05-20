@@ -2,7 +2,7 @@
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
-const float PI = 3.1415;
+const float PI = 3.141592;
 int main()
 {
     int a, b, c, x1, y1, r1, x2, y2, r2;
