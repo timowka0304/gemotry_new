@@ -20,7 +20,11 @@ int main()
     s = SquareC(r2, PI);
     printf("Perimetr = %f Square = %f\n", p, s);
 
-    Cross(x1, y1, r1, x2, y2, r2);
+    if (Cross(x1, y1, r1, x2, y2, r2) == 1) {
+        printf("1 and 2 circules are cross\n");
+    } else {
+        printf("1 and 2 circules are not cross\n");
+    }
 
     printf("Enter sides of triangle(a,b,c):");
     scanf("%d %d %d", &a, &b, &c);
