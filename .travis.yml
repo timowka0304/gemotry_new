@@ -3,8 +3,9 @@ language: C
 script:
 - make
 - make test
+- cd bin
+- ./geotest
 - git ls-files src/ | xargs clang-format -i && git diff --exit-code
-- git ls-files bin/.test_geometry
 
 compiler: gcc
 
