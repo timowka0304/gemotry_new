@@ -29,7 +29,7 @@ $(OTD)perimetr.o: $(SD)perimetr.c $(SD)foo.h
 	$(CC) $(CFLAGS) -I thirdparty -I src -c $(SD)perimetr.c -o $(OTD)perimetr.o  -lm
 $(OTD)square.o: $(SD)square.c $(SD)foo.h
 	$(CC) $(CFLAGS) -I thirdparty -I src -c $(SD)square.c -o $(OTD)square.o  -lm
-$(OTD)intersection.o: $(SD)cross.c $(SD)foo.h
+$(OTD)cross.o: $(SD)cross.c $(SD)foo.h
 	$(CC) $(CFLAGS) -I thirdparty -I src -c $(SD)cross.c -o $(OTD)cross.o  -lm
 clean:
 	rm -rf $(OD)*.o $(EXECUTABLE) $(EXECUTABLE_2)
